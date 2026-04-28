@@ -1,4 +1,4 @@
-# Bexa — Frontend Design Skills for AI Coding Agents
+# Bexa - Frontend Design Skills for AI Coding Agents
 
 <p align="center">
   <strong>Drop one file into your project. Your AI agent stops building generic UIs.</strong>
