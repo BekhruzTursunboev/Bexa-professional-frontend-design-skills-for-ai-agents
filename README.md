@@ -40,19 +40,13 @@ Works on Windows, macOS, and Linux. Requires Node.js.
 <details>
 <summary>Manual install — macOS / Linux</summary>
 
-```bash
-# Web projects
-curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa/SKILL.md
-
-# SaaS dashboards & admin panels
-curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-dashboard/SKILL.md
-
-# React Native & Expo apps
-curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-mobile/SKILL.md
-
-# Cinematic animations (GSAP, Framer Motion, Three.js)
-curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-motion/SKILL.md
-```
+| Skill | Best For | Install |
+|---|---|---|
+| **bexa** | Any website, landing page, or SaaS product | [View](skills/bexa/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa/SKILL.md) |
+| **bexa-landing** | Agency landing pages — brand identity, high-conversion, animated | [View](skills/bexa-landing/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-landing/SKILL.md) |
+| **bexa-dashboard** | SaaS admin panels, analytics, data-dense UIs | [View](skills/bexa-dashboard/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-dashboard/SKILL.md) |
+| **bexa-mobile** | React Native / Expo — native gestures & haptics | [View](skills/bexa-mobile/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-mobile/SKILL.md) |
+| **bexa-motion** | Scroll-storytelling, GSAP, Three.js, Framer Motion | [View](skills/bexa-motion/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-motion/SKILL.md) |
 
 </details>
 
@@ -83,10 +77,12 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa
 
 | I am building... | Use this skill |
 |---|---|
-| A website, landing page, or SaaS product | **bexa** |
+| A website, landing page, or general product UI | **bexa** |
+| An agency landing page, brand site, or high-conversion page | **bexa-landing** |
 | An admin panel, dashboard, or analytics UI | **bexa-dashboard** |
 | A React Native or Expo mobile app | **bexa-mobile** |
 | A site with heavy animations, GSAP, or Three.js | **bexa** + **bexa-motion** |
+| A conversion-focused landing page with cinematic scroll | **bexa-landing** + **bexa-motion** |
 
 Install the skill that matches your project. If you're unsure, start with **bexa**.
 

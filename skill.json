@@ -2,7 +2,7 @@
   "name": "bexa",
   "displayName": "Bexa — Frontend Design Skills for AI Agents",
   "description": "Drop one SKILL.md file. Your AI agent stops building generic UIs and starts producing professional, non-generic frontends.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "BekhruzTursunboev",
   "license": "MIT",
   "repository": "https://github.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents",
@@ -13,6 +13,13 @@
       "description": "The default skill. Use for any website, landing page, or SaaS product. Covers typography, color, layout, motion, and component standards.",
       "file": "skills/bexa/SKILL.md",
       "tags": ["web", "frontend", "design", "nextjs", "react", "tailwind", "ui"]
+    },
+    {
+      "name": "bexa-landing",
+      "displayName": "Bexa Landing",
+      "description": "Agency-grade landing page skill. High-conversion, brand-matched, animated. Hero patterns, conversion copy rules, social proof, CTA engineering, scroll animation, and performance checklist.",
+      "file": "skills/bexa-landing/SKILL.md",
+      "tags": ["landing-page", "conversion", "agency", "brand", "hero", "saas", "marketing"]
     },
     {
       "name": "bexa-dashboard",
