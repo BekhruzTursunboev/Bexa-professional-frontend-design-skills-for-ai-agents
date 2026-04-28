@@ -1,10 +1,10 @@
 ---
-name: forge-mobile
+name: bexa-mobile
 description: >
-  Premium mobile UI skill for React Native and Expo.
+  Premium mobile UI skill for React Native and Expo apps.
   Enforces native-grade interaction patterns, platform-specific motion,
   gesture physics, and non-generic visual systems for iOS and Android.
-version: 1.0.0
+version: 1.2.0
 ---
 
 # FORGE MOBILE — Native-Grade Mobile Design Skill

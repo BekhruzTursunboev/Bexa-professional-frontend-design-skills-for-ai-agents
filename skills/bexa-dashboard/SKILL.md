@@ -1,10 +1,10 @@
 ---
-name: forge-dashboard
+name: bexa-dashboard
 description: >
-  Data-dense dashboard and admin panel design skill.
+  Data-dense dashboard and admin panel design skill for AI agents.
   Enforces information hierarchy, data visualization clarity,
   high-density layouts, and professional SaaS-grade UI patterns.
-version: 1.0.0
+version: 1.2.0
 ---
 
 # FORGE DASHBOARD — Data-Dense SaaS Design Skill

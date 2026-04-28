@@ -1,11 +1,11 @@
 ---
-name: forge-motion
+name: bexa-motion
 description: >
-  Advanced motion and animation design skill.
+  Advanced motion and animation design skill for AI agents.
   Covers scroll-storytelling, physics-grade interactions, Three.js/WebGL,
   GSAP choreography, and cinematic page transitions.
-  Use alongside forge-core when MOTION_DEPTH >= 8 is needed.
-version: 1.0.0
+  Use alongside bexa when MOTION_DEPTH >= 8 is needed.
+version: 1.2.0
 ---
 
 # FORGE MOTION — Cinematic Animation & Physics Skill

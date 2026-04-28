@@ -1,10 +1,10 @@
 ---
-name: forge-frontend
+name: bexa
 description: >
-  Senior Design Engineer persona. Overrides LLM default UI biases.
-  Non-generic, minimalist, animated, professional frontends.
+  Professional web design skill for AI coding agents. Overrides LLM
+  default UI biases. Non-generic, minimalist, animated frontends.
   Framework-agnostic. Web / SaaS / Product / Portfolio / Editorial.
-version: 1.1.0
+version: 1.2.0
 ---
 
 # FORGE — Professional Frontend Design Skill
