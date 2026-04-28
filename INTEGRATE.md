@@ -1,23 +1,44 @@
-# FORGE — Integration Guide
+# Bexa — Integration Guide
 
 Get up and running in under 2 minutes with any AI coding agent.
+
+```
+Base URL: https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main
+```
+
+---
+
+## Quick Install (curl)
+
+```bash
+# Core skill — works for any web project
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md
+
+# Dashboard / admin panel
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-dashboard/SKILL.md
+
+# React Native / Expo mobile
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-mobile/SKILL.md
+
+# Cinematic motion — GSAP, Three.js, Framer
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md
+```
 
 ---
 
 ## Method 1 — Drop the File (Works Everywhere)
 
 Copy the `SKILL.md` you need into your project root. That's it.
-Your agent detects and follows it automatically.
 
 ```
 your-project/
-├── SKILL.md          ← paste forge/SKILL.md here
+├── SKILL.md          ← drop it here
 ├── src/
 ├── package.json
 └── ...
 ```
 
-For multiple skills, merge the files or stack them:
+For multiple skills, stack them in your root:
 ```
 SKILL.md              ← forge (core, always first)
 SKILL-MOTION.md       ← forge-motion (add-on)
@@ -29,57 +50,85 @@ SKILL-DASHBOARD.md    ← forge-dashboard (add-on)
 ## Method 2 — Agent-Specific Setup
 
 ### Cursor
-Place `SKILL.md` in project root. Cursor reads it as a context rule automatically.
 
-To apply globally (all projects):
+Drop `SKILL.md` in project root — auto-detected.
+
+Global (applies to all projects):
 ```
 ~/.cursor/rules/SKILL.md
 ```
 
-### Claude Code (claude.ai/code)
+### Claude Code
+
 ```bash
-# In your project root
-cp path/to/forge/SKILL.md ./SKILL.md
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md
 ```
-Or paste contents into `CLAUDE.md` if you already have one — append at the bottom.
+
+Or append to an existing `CLAUDE.md`:
+```bash
+curl https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md >> CLAUDE.md
+```
 
 ### Windsurf
-Place `SKILL.md` in project root. Windsurf picks it up as a workspace rule.
+
+Drop `SKILL.md` in project root — auto-detected.
 
 Global rules: Settings → AI → Rules → paste content.
 
 ### GitHub Copilot (VS Code)
-Create `.github/copilot-instructions.md` and paste the SKILL.md contents inside.
 
-```
-your-project/
-└── .github/
-    └── copilot-instructions.md   ← paste skill content here
+```bash
+mkdir -p .github
+curl -o .github/copilot-instructions.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md
 ```
 
 ### Aider
+
 ```bash
-aider --read skills/forge/SKILL.md
+aider --read SKILL.md
 ```
 
-### OpenAI Codex / ChatGPT
-Paste the SKILL.md content at the top of your conversation, then give your task.
+Or inline:
+```bash
+curl -s https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md | aider --read /dev/stdin
+```
+
+### ChatGPT / OpenAI Codex
+
+Paste the raw file content at the top of your conversation, then give your task.
 
 ---
 
 ## Method 3 — System Prompt (API / Custom Agents)
 
-If you're building with the API directly, prepend SKILL.md as a system message:
-
 ```python
-with open("skills/forge/SKILL.md") as f:
-    skill = f.read()
+import anthropic, httpx
 
+skill_url = "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md"
+skill = httpx.get(skill_url).text
+
+client = anthropic.Anthropic()
 response = client.messages.create(
     model="claude-opus-4-5",
+    max_tokens=8096,
     system=skill,
     messages=[{"role": "user", "content": "Build me a SaaS landing page"}]
 )
+```
+
+```js
+// OpenAI Node.js
+const skill = await fetch(
+  "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md"
+).then(r => r.text());
+
+const response = await openai.chat.completions.create({
+  model: "gpt-4o",
+  messages: [
+    { role: "system", content: skill },
+    { role: "user",   content: "Build me a SaaS landing page" }
+  ]
+});
 ```
 
 ---
@@ -92,53 +141,53 @@ response = client.messages.create(
 | Marketing / landing page | `forge` + `forge-motion` |
 | Admin panel / SaaS dashboard | `forge-dashboard` |
 | React Native / Expo app | `forge-mobile` |
-| Scroll-storytelling site | `forge` + `forge-motion` |
-| Live data dashboard | `forge-dashboard` + `forge-motion` |
+| Scroll-storytelling / cinematic site | `forge` + `forge-motion` |
+| Live data dashboard with animation | `forge-dashboard` + `forge-motion` |
 
 ---
 
 ## Dial Overrides (In Your Prompt)
 
-You never need to edit the SKILL.md file. Just tell the agent in plain language:
+Never edit the SKILL.md file. Just say it in plain language:
 
 | Say this | Effect |
 |---|---|
 | "keep it clean and minimal" | SPATIAL_TENSION drops → more whitespace |
 | "make it cinematic / animated" | MOTION_DEPTH rises → springs, scroll effects |
-| "editorial / editorial style" | STRUCTURE_CHAOS rises → asymmetric layouts |
+| "editorial / asymmetric style" | STRUCTURE_CHAOS rises → offset layouts |
+| "no animations, CSS only" | MOTION_DEPTH = 2 |
 | "data-dense / cockpit mode" | SPATIAL_TENSION rises → tight, packed UI |
-| "simple, no animations" | MOTION_DEPTH drops → CSS hover only |
+| "symmetric, centered layout" | STRUCTURE_CHAOS = 2 |
 
 ---
 
-## Verifying It Worked
+## Verify It's Working
 
-After your first generation with FORGE active, check:
+After your first generation, check:
 
-- [ ] Font is NOT Inter/Roboto/Open Sans by default
-- [ ] No centered hero with centered H1 (at default dials)
-- [ ] Colors use `hsl()` tokens, not hardcoded hex
-- [ ] Full-height sections use `min-h-[100dvh]`
+- [ ] Font is NOT Inter/Roboto/Open Sans as the display font
+- [ ] No centered hero + centered H1 (at default dials)
+- [ ] Colors are `hsl()` tokens defined in `:root`, not hardcoded hex
+- [ ] Full-height sections use `min-h-[100dvh]` — not `h-screen`
 - [ ] Buttons have hover AND active/press states
-- [ ] Loading skeleton matches the layout shape
+- [ ] Loading state is a shimmer skeleton matching the layout shape
 - [ ] Dark mode is implemented
-
-If any of these fail, paste the failing output as a GitHub Issue.
 
 ---
 
 ## Troubleshooting
 
 **Agent ignores the skill?**
-→ Some agents need explicit activation. Start your prompt with:
-`"Follow the FORGE design skill rules strictly. Build me..."`
+Start your prompt with: `"Follow the Bexa design skill rules in SKILL.md strictly. Now build me..."`
 
 **Too many animations?**
-→ Add to your prompt: `"MOTION_DEPTH: 3"` or `"no animations, CSS only"`
+Add to your prompt: `"MOTION_DEPTH: 2"` or `"no animations, CSS transitions only"`
 
-**Layout too complex for the project?**
-→ Add to your prompt: `"STRUCTURE_CHAOS: 2, keep it symmetric"`
+**Layout too complex?**
+Add to your prompt: `"STRUCTURE_CHAOS: 2, keep it symmetric and centered"`
 
-**Tailwind v3 vs v4 conflicts?**
-→ The skill checks `package.json` automatically. If it doesn't, add to your prompt:
-`"We are using Tailwind v3"` or `"Tailwind v4"`
+**Tailwind version conflict?**
+Add to your prompt: `"We are using Tailwind v3"` or `"Tailwind v4"`
+
+**Want to stack two skills?**
+Name them `SKILL.md` and `SKILL-MOTION.md` (or any name). Most agents read all `SKILL*.md` files in root.
