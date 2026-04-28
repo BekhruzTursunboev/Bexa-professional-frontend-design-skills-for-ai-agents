@@ -1,23 +1,31 @@
 # Bexa — Frontend Design Skills for AI Coding Agents
 
 <p align="center">
-  <strong>The SKILL.md pack that makes AI agents stop building generic UIs.</strong><br/>
-  Drop one file. Your agent becomes a Senior Design Engineer.
+  <strong>Drop one file into your project. Your AI agent stops building generic UIs.</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/stargazers">
     <img src="https://img.shields.io/github/stars/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents?style=flat-square&color=0f172a" />
   </a>
-  <img src="https://img.shields.io/badge/version-1.1.0-0f172a?style=flat-square" />
-  <img src="https://img.shields.io/badge/skills-4-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/version-1.2.0-0f172a?style=flat-square" />
   <img src="https://img.shields.io/badge/license-MIT-22c55e?style=flat-square" />
   <img src="https://img.shields.io/badge/framework-agnostic-1e293b?style=flat-square" />
 </p>
 
 <p align="center">
-  Works with · <b>Cursor</b> · <b>Antigravity</b> · <b>Claude Code</b> · <b>Windsurf</b> · <b>GitHub Copilot</b> · <b>Codex</b> · <b>Aider</b> · <b>Amp</b> · <b>Cline</b> · <b>Gemini CLI</b> · <b>Warp</b> · <b>OpenCode</b>
+  Cursor · Antigravity · Claude Code · Windsurf · GitHub Copilot · Codex · Aider · Amp · Cline · Gemini CLI · Warp
 </p>
+
+---
+
+## How It Works
+
+Bexa is a set of **design instruction files** (`SKILL.md`) that you place in your project root. Your AI coding agent reads the file automatically and follows its rules every time it writes frontend code.
+
+**The result:** instead of producing the same centered hero, purple gradient, and Inter font it always defaults to, your agent produces a deliberate, professional, non-generic UI — with proper typography, calibrated colors, real dark mode, and physics-based animations.
+
+No npm package. No runtime. No config. Just a Markdown file.
 
 ---
 
@@ -27,180 +35,145 @@
 npx skills add https://github.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents
 ```
 
-Works on **Windows, macOS, and Linux**. Requires Node.js.
+Works on Windows, macOS, and Linux. Requires Node.js.
 
 <details>
-<summary>Manual install (curl / PowerShell)</summary>
+<summary>Manual install — macOS / Linux</summary>
 
-**macOS / Linux**
 ```bash
-curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md
+# Web projects
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa/SKILL.md
+
+# SaaS dashboards & admin panels
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-dashboard/SKILL.md
+
+# React Native & Expo apps
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-mobile/SKILL.md
+
+# Cinematic animations (GSAP, Framer Motion, Three.js)
+curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-motion/SKILL.md
 ```
 
-**Windows (PowerShell)**
+</details>
+
+<details>
+<summary>Manual install — Windows (PowerShell)</summary>
+
 ```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md" -OutFile "SKILL.md"
+# Web projects
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa/SKILL.md" -OutFile "SKILL.md"
+
+# SaaS dashboards & admin panels
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-dashboard/SKILL.md" -OutFile "SKILL.md"
+
+# React Native & Expo apps
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-mobile/SKILL.md" -OutFile "SKILL.md"
+
+# Cinematic animations (GSAP, Framer Motion, Three.js)
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/bexa-motion/SKILL.md" -OutFile "SKILL.md"
 ```
 
-Drop `SKILL.md` into your project root. Done.
+> **Tip:** `Shift` + right-click your project folder → *"Open PowerShell window here"*
 
 </details>
 
 ---
 
-## What Is This
+## Which Skill Do I Need?
 
-**Bexa** is a collection of `SKILL.md` instruction files for AI coding agents (Cursor, Claude Code, Windsurf, Copilot, and more). When placed in your project root, these files instruct the agent to follow a strict set of design engineering rules — overriding the generic, repetitive UI patterns that AI models produce by default.
-
-**Without Bexa:** Your agent generates a centered hero, purple gradient, three equal feature cards, Inter font, and broken Unsplash images.
-
-**With Bexa:** Your agent produces intentional layouts, curated font pairings, HSL-calibrated color systems, proper dark mode, animation with physics, and accessible, production-ready components.
-
-No runtime. No config. No build step. Just a Markdown file your agent reads.
-
----
-
-## Skills
-
-| Skill | Best For | Install |
-|---|---|---|
-| **forge** | Any web project — the default | [View](skills/forge/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md) |
-| **forge-dashboard** | SaaS admin panels, analytics, data-dense UIs | [View](skills/forge-dashboard/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-dashboard/SKILL.md) |
-| **forge-mobile** | React Native / Expo — native gestures & haptics | [View](skills/forge-mobile/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-mobile/SKILL.md) |
-| **forge-motion** | Scroll-storytelling, GSAP, Three.js, Framer Motion | [View](skills/forge-motion/SKILL.md) · [Raw](https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md) |
-
-**Combine skills** for advanced setups:
-```bash
-# Landing page with cinematic scroll
-curl -o SKILL.md        .../skills/forge/SKILL.md
-curl -o SKILL-MOTION.md .../skills/forge-motion/SKILL.md
-
-# Animated SaaS dashboard
-curl -o SKILL.md        .../skills/forge-dashboard/SKILL.md
-curl -o SKILL-MOTION.md .../skills/forge-motion/SKILL.md
-```
-
----
-
-## The 3-Dial System
-
-Every skill has three adjustable dials. You never edit the file — just describe what you want in your prompt.
-
-```
-SPATIAL_TENSION:  7   (1 = Zen whitespace  →  10 = Max editorial density)
-MOTION_DEPTH:     7   (1 = CSS hover only  →  10 = GSAP + Three.js physics)
-STRUCTURE_CHAOS:  6   (1 = Symmetric grid  →  10 = Organic asymmetric layout)
-```
-
-Say **"minimal"** → SPATIAL_TENSION drops. Say **"cinematic"** → MOTION_DEPTH rises. Say **"editorial"** → STRUCTURE_CHAOS rises.
-
----
-
-## What Changes in Your Output
-
-### Typography
-
-Bexa ships a **context-specific font pairing matrix** — no more Inter at default weight.
-
-| Project type | Display font | Body font | Code font |
-|---|---|---|---|
-| SaaS / Product | Geist | Geist | Geist Mono |
-| Editorial / Blog | Fraunces | Plus Jakarta Sans | JetBrains Mono |
-| Portfolio / Agency | Cabinet Grotesk | Outfit | Fira Code |
-| Dashboard / Data | Satoshi | Inter | Geist Mono |
-| Luxury / Brand | Cormorant Garamond | Jost | — |
-| Developer Tool | Space Grotesk | DM Sans | JetBrains Mono |
-
-### Color
-
-HSL design tokens instead of hardcoded hex values. One accent. Maximum 75% saturation.
-
-```css
-:root {
-  --surface-0:      hsl(0 0% 98%);
-  --accent:         hsl(221 70% 52%);   /* calibrated, not AI purple */
-  --accent-dim:     hsl(221 70% 52% / 0.12);
-  --text-primary:   hsl(220 20% 10%);
-  --border:         hsl(220 13% 91%);
-}
-```
-
-### Motion
-
-Spring physics instead of `linear`/`ease`. `useMotionValue` instead of `useState`. Proper cleanup. `prefers-reduced-motion` respected.
-
-```jsx
-// Magnetic button — outside render cycle, never useState
-const x = useMotionValue(0)
-const sx = useSpring(x, { stiffness: 200, damping: 20 })
-```
-
----
-
-## Before & After
-
-| AI default output | With Bexa |
+| I am building... | Use this skill |
 |---|---|
-| Centered hero + centered H1 | Left-anchored or split-screen hero |
-| 3 equal feature cards | Zigzag, masonry, or 70/30 asymmetric grid |
-| AI purple gradient | HSL-calibrated single accent |
-| Inter font everywhere | Context-matched font pairing |
-| Outer glow `box-shadow` | Diffusion shadow + inner refraction border |
-| `h-screen` (iOS Safari bug) | `min-h-[100dvh]` |
-| Circular spinner | Layout-matched shimmer skeleton |
-| *"Elevate your workflow"* | Concrete product-specific copy |
-| `useState` for cursor effects | `useMotionValue` + `useSpring` |
-| No dark mode | `[data-theme="dark"]` + `prefers-color-scheme` |
-| Missing accessibility | WCAG AA + ARIA + keyboard navigation |
+| A website, landing page, or SaaS product | **bexa** |
+| An admin panel, dashboard, or analytics UI | **bexa-dashboard** |
+| A React Native or Expo mobile app | **bexa-mobile** |
+| A site with heavy animations, GSAP, or Three.js | **bexa** + **bexa-motion** |
+
+Install the skill that matches your project. If you're unsure, start with **bexa**.
+
+---
+
+## What Changes in Your AI's Output
+
+### Before Bexa
+- Centered hero section with a centered headline
+- Three equal feature cards in a row
+- Purple or blue gradient on everything
+- Inter font at default weight
+- `h-screen` that breaks on iOS Safari
+- No dark mode
+- Generic circular loading spinner
+- *"Elevate your seamless next-gen workflow"*
+
+### After Bexa
+- Left-anchored or split-screen hero
+- Zigzag, masonry, or asymmetric card layout
+- One HSL-calibrated accent color (≤75% saturation)
+- Context-matched font pairing (Geist, Satoshi, Fraunces, etc.)
+- `min-h-[100dvh]` — works everywhere
+- Full dark mode with proper token system
+- Layout-matched shimmer skeleton
+- Concrete, product-specific copy
+
+---
+
+## The 3 Dials
+
+Every Bexa skill has three settings you control through your prompt — you never edit the file.
+
+| Dial | What it controls | Example prompts |
+|---|---|---|
+| **SPATIAL_TENSION** | Whitespace vs. density | *"airy and minimal"* or *"data-dense, cockpit mode"* |
+| **MOTION_DEPTH** | Animation complexity | *"no animations"* or *"cinematic, physics-based"* |
+| **STRUCTURE_CHAOS** | Layout symmetry | *"clean, centered"* or *"asymmetric, editorial"* |
+
+Just describe what you want. The agent adjusts automatically.
 
 ---
 
 ## Agent Setup
 
-| Agent | Method |
+After running `npx skills add`, Bexa is installed for the agents you selected. If you prefer manual setup:
+
+| Agent | What to do |
 |---|---|
-| Cursor | Drop `SKILL.md` in project root |
-| Antigravity | Drop `SKILL.md` in project root |
+| Cursor, Antigravity, Windsurf, Amp, Cline, Warp | Drop `SKILL.md` in your project root |
 | Claude Code | Drop `SKILL.md` in root, or append to `CLAUDE.md` |
-| Windsurf | Drop `SKILL.md` in project root |
 | GitHub Copilot | Add content to `.github/copilot-instructions.md` |
-| Codex / ChatGPT | Paste content at top of conversation |
+| Codex / ChatGPT | Paste content at the top of your conversation |
 | Aider | `aider --read SKILL.md` |
-| Amp, Cline, Warp, Gemini CLI, OpenCode | Drop `SKILL.md` in project root |
 | Any LLM API | Pass as the `system` message |
 
-→ Full setup with copy-paste commands: [INTEGRATE.md](INTEGRATE.md)
+Full setup guide with copy-paste commands → [INTEGRATE.md](INTEGRATE.md)
 
 ---
 
 ## FAQ
 
-**Does it work with React, Next.js, Vue, Svelte, Astro, or vanilla HTML?**
-Yes. Bexa is framework-agnostic. Design rules apply regardless of stack.
+**Does it work with React, Vue, Svelte, Astro, or plain HTML?**
+Yes. Bexa is framework-agnostic.
 
-**What is a SKILL.md file?**
-A portable instruction file that AI coding agents detect and follow automatically from the project root. Like `.cursorrules` or `CLAUDE.md`, but focused entirely on design quality.
+**Do I need to configure anything?**
+No. Drop the file in your project root and start building.
 
-**Will it conflict with my existing rules file?**
-No. Append Bexa content to your existing `CLAUDE.md` or `.cursorrules`.
+**Will it conflict with my existing `.cursorrules` or `CLAUDE.md`?**
+No. Append Bexa content to your existing file if needed.
 
-**Do I need to edit the file to change the output style?**
-No. Tell the agent in plain language: "minimal", "cinematic", "no animations", "data-dense". Dials adjust automatically.
+**Can I use multiple skills at once?**
+Yes. Name them `SKILL.md` and `SKILL-MOTION.md` in your root — agents read both.
 
 ---
 
 ## Roadmap
 
-- [ ] `forge-editorial` — Long-form content, editorial grids
-- [ ] `forge-brutalist` — Swiss type, raw structure, high contrast
-- [ ] `forge-luxury` — Premium whitespace, muted palette, serif display
-- [ ] `forge-stitch` — Google Stitch / `DESIGN.md` format
+- [ ] `bexa-editorial` — Blog and long-form article design
+- [ ] `bexa-brutalist` — Swiss typography, raw grid, high contrast
+- [ ] `bexa-luxury` — Premium whitespace, serif display, muted palette
 
 ---
 
 ## Contributing
 
-Every rule must override a **specific, documented LLM bias**. No vague rules.
+Every rule must override a specific, documented AI design bias.
 See [CONTRIBUTING.md](CONTRIBUTING.md) · [CHANGELOG.md](CHANGELOG.md)
 
 ## License

@@ -1,63 +1,51 @@
 {
   "name": "bexa",
-  "displayName": "Bexa — Professional Frontend Design Skills",
-  "description": "SKILL.md files that turn AI coding agents into Senior Design Engineers. Non-generic, minimalist, animated, professional frontends.",
-  "version": "1.1.0",
+  "displayName": "Bexa — Frontend Design Skills for AI Agents",
+  "description": "Drop one SKILL.md file. Your AI agent stops building generic UIs and starts producing professional, non-generic frontends.",
+  "version": "1.2.0",
   "author": "BekhruzTursunboev",
   "license": "MIT",
   "repository": "https://github.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents",
   "skills": [
     {
-      "name": "forge",
-      "displayName": "Forge — Core Web Design",
-      "description": "All-purpose professional frontend skill. Non-generic layouts, curated typography, HSL color system, motion depth scale, and 12-point quality gate. Start here for any web project.",
-      "file": "skills/forge/SKILL.md",
-      "tags": ["web", "frontend", "design", "nextjs", "react", "tailwind"]
+      "name": "bexa",
+      "displayName": "Bexa — Web Design",
+      "description": "The default skill. Use for any website, landing page, or SaaS product. Covers typography, color, layout, motion, and component standards.",
+      "file": "skills/bexa/SKILL.md",
+      "tags": ["web", "frontend", "design", "nextjs", "react", "tailwind", "ui"]
     },
     {
-      "name": "forge-dashboard",
-      "displayName": "Forge Dashboard — Data-Dense SaaS UI",
-      "description": "Admin panels, analytics dashboards, and SaaS internals. Data visualization standards, command palette, KPI layouts, and high-density information architecture.",
-      "file": "skills/forge-dashboard/SKILL.md",
+      "name": "bexa-dashboard",
+      "displayName": "Bexa Dashboard",
+      "description": "For SaaS admin panels and analytics UIs. Data visualization standards, command palette, KPI layouts, high-density information architecture.",
+      "file": "skills/bexa-dashboard/SKILL.md",
       "tags": ["dashboard", "saas", "admin", "data", "charts", "analytics"]
     },
     {
-      "name": "forge-mobile",
-      "displayName": "Forge Mobile — React Native & Expo",
-      "description": "Native-grade mobile design. Thumb zone architecture, gesture physics with Reanimated 3, haptic feedback, platform-specific motion (iOS vs Android), and performance mandates.",
-      "file": "skills/forge-mobile/SKILL.md",
+      "name": "bexa-mobile",
+      "displayName": "Bexa Mobile",
+      "description": "For React Native and Expo apps. Thumb zone architecture, gesture physics, haptic feedback, iOS and Android motion patterns.",
+      "file": "skills/bexa-mobile/SKILL.md",
       "tags": ["mobile", "react-native", "expo", "ios", "android", "gestures"]
     },
     {
-      "name": "forge-motion",
-      "displayName": "Forge Motion — Cinematic Animation",
-      "description": "Advanced motion and animation. 5 named spring configs, Framer Motion patterns, GSAP scrolltelling with cleanup, Three.js WebGL, and prefers-reduced-motion compliance.",
-      "file": "skills/forge-motion/SKILL.md",
-      "tags": ["motion", "animation", "gsap", "framer", "threejs", "scroll"]
+      "name": "bexa-motion",
+      "displayName": "Bexa Motion",
+      "description": "Add-on for cinematic animation. GSAP scrolltelling, Three.js WebGL, Framer Motion physics, named spring configurations.",
+      "file": "skills/bexa-motion/SKILL.md",
+      "tags": ["motion", "animation", "gsap", "framer-motion", "threejs", "scroll"]
     }
   ],
   "agents": [
-    "amp",
-    "antigravity",
-    "cline",
-    "codex",
-    "cursor",
-    "deep-agents",
-    "firebender",
-    "gemini-cli",
-    "github-copilot",
-    "kimi-code",
-    "opencode",
-    "warp",
-    "claude-code",
-    "windsurf",
-    "aider"
+    "amp", "antigravity", "cline", "codex", "cursor",
+    "deep-agents", "firebender", "gemini-cli", "github-copilot",
+    "kimi-code", "opencode", "warp", "claude-code", "windsurf", "aider"
   ],
   "keywords": [
     "skill-md", "cursor-rules", "claude-code", "windsurf", "copilot",
-    "antigravity", "codex", "aider", "amp", "cline", "gemini-cli", "warp",
+    "antigravity", "codex", "aider", "amp", "cline", "gemini-cli",
     "frontend-design", "design-system", "ui-ux", "framer-motion",
     "tailwindcss", "react", "nextjs", "agentic-coding", "design-engineer",
-    "non-generic-ui", "anti-slop", "react-native", "gsap", "threejs"
+    "non-generic-ui", "react-native", "gsap", "threejs", "warp"
   ]
 }
