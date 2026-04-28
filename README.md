@@ -32,7 +32,9 @@ Every AI-generated UI has the same fingerprints:
 
 ## Install
 
-### Option 1 — curl (fastest)
+Open a terminal **inside your project folder** and run one command.
+
+### macOS / Linux
 
 ```bash
 # Core skill — start here for any web project
@@ -48,9 +50,27 @@ curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-profes
 curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md
 ```
 
-### Option 2 — Manual Download
+### Windows (PowerShell)
 
-1. Click the skill file you need from the table below
+```powershell
+# Core skill
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md" -OutFile "SKILL.md"
+
+# Dashboard / admin panel
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-dashboard/SKILL.md" -OutFile "SKILL.md"
+
+# React Native / Expo mobile
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-mobile/SKILL.md" -OutFile "SKILL.md"
+
+# Cinematic motion
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md" -OutFile "SKILL.md"
+```
+
+> **Windows tip:** `Shift` + right-click your project folder → *"Open PowerShell window here"*
+
+### Manual Download
+
+1. Click any skill's **View** link in the table below
 2. Copy the raw content
 3. Paste into a new file called `SKILL.md` in your project root
 
@@ -87,17 +107,22 @@ curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-profes
 
 ## Combining Skills
 
+**macOS / Linux**
 ```bash
 # Marketing site / landing page
-curl -o SKILL.md       .../skills/forge/SKILL.md
-curl -o SKILL-MOTION.md .../skills/forge-motion/SKILL.md
+curl -o SKILL.md        https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md
+curl -o SKILL-MOTION.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md
 
-# SaaS dashboard with live animation
-curl -o SKILL.md       .../skills/forge-dashboard/SKILL.md
-curl -o SKILL-MOTION.md .../skills/forge-motion/SKILL.md
+# SaaS dashboard with animation
+curl -o SKILL.md        https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-dashboard/SKILL.md
+curl -o SKILL-MOTION.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md
+```
 
-# React Native app
-curl -o SKILL.md .../skills/forge-mobile/SKILL.md
+**Windows (PowerShell)**
+```powershell
+# Marketing site / landing page
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md" -OutFile "SKILL.md"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md" -OutFile "SKILL-MOTION.md"
 ```
 
 Stack multiple `SKILL-*.md` files in your root — agents read all of them.

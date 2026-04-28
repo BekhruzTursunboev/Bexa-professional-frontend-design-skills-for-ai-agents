@@ -1,14 +1,13 @@
 # Bexa — Integration Guide
 
 Get up and running in under 2 minutes with any AI coding agent.
-
-```
-Base URL: https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main
-```
+Open your terminal, `cd` into your project folder, and run the command for your OS.
 
 ---
 
-## Quick Install (curl)
+## Quick Install
+
+### macOS / Linux (Terminal)
 
 ```bash
 # Core skill — works for any web project
@@ -23,6 +22,24 @@ curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-profes
 # Cinematic motion — GSAP, Three.js, Framer
 curl -o SKILL.md https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md
 ```
+
+### Windows (PowerShell)
+
+```powershell
+# Core skill — works for any web project
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge/SKILL.md" -OutFile "SKILL.md"
+
+# Dashboard / admin panel
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-dashboard/SKILL.md" -OutFile "SKILL.md"
+
+# React Native / Expo mobile
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-mobile/SKILL.md" -OutFile "SKILL.md"
+
+# Cinematic motion — GSAP, Three.js, Framer
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents/main/skills/forge-motion/SKILL.md" -OutFile "SKILL.md"
+```
+
+> **Windows tip:** Open PowerShell inside your project folder by holding `Shift` + right-clicking the folder → *"Open PowerShell window here"*
 
 ---
 
