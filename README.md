@@ -9,8 +9,20 @@
   <img src="https://img.shields.io/badge/version-1.1.0-0f172a?style=flat-square" />
   <img src="https://img.shields.io/badge/skills-4-0f172a?style=flat-square" />
   <img src="https://img.shields.io/badge/license-MIT-22c55e?style=flat-square" />
-  <img src="https://img.shields.io/badge/agents-Cursor_%7C_Claude_%7C_Windsurf_%7C_Copilot_%7C_Aider-1e293b?style=flat-square" />
   <img src="https://img.shields.io/badge/framework-agnostic-1e293b?style=flat-square" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/works_with-Cursor-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Antigravity-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Claude_Code-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Windsurf-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Copilot-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Codex-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Aider-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Amp-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Cline-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Gemini_CLI-0f172a?style=flat-square" />
+  <img src="https://img.shields.io/badge/works_with-Warp-0f172a?style=flat-square" />
 </p>
 
 ---
@@ -99,17 +111,26 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BekhruzTursunboev/Bexa
 
 ## Agent Setup
 
-| Agent | What to do |
+| Agent | How to install |
 |---|---|
 | **Cursor** | Drop `SKILL.md` in project root — auto-detected |
+| **Antigravity** | Drop `SKILL.md` in project root — auto-detected |
 | **Claude Code** | Drop `SKILL.md` in root, or append to `CLAUDE.md` |
 | **Windsurf** | Drop `SKILL.md` in project root — auto-detected |
-| **GitHub Copilot** | Paste content into `.github/copilot-instructions.md` |
+| **GitHub Copilot** | Add to `.github/copilot-instructions.md` |
+| **Codex (OpenAI)** | Paste content at top of conversation or as system prompt |
 | **Aider** | `aider --read SKILL.md` |
-| **ChatGPT / Codex** | Paste content at the top of your conversation |
-| **API (any model)** | Pass as the `system` message |
+| **Amp** | Drop `SKILL.md` in project root |
+| **Cline** | Drop `SKILL.md` in project root |
+| **Gemini CLI** | Drop `SKILL.md` in project root |
+| **Warp** | Drop `SKILL.md` in project root |
+| **Kimi Code** | Drop `SKILL.md` in project root |
+| **OpenCode** | Drop `SKILL.md` in project root |
+| **Deep Agents** | Drop `SKILL.md` in project root |
+| **Firebender** | Drop `SKILL.md` in project root |
+| **Any LLM API** | Pass as the `system` message |
 
-> Full copy-paste commands for every agent → [INTEGRATE.md](INTEGRATE.md)
+> Full setup commands + API examples → [INTEGRATE.md](INTEGRATE.md)
 
 ---
 

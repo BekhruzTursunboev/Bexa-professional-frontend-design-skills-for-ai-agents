@@ -1,7 +1,7 @@
 {
   "name": "bexa",
   "displayName": "Bexa — Professional Frontend Design Skills",
-  "description": "SKILL.md files that turn AI coding agents into Senior Design Engineers. Non-generic, minimalist, animated, professional frontends. Works with Cursor, Claude Code, Windsurf, Copilot, and Aider.",
+  "description": "SKILL.md files that turn AI coding agents into Senior Design Engineers. Non-generic, minimalist, animated, professional frontends.",
   "version": "1.1.0",
   "author": "BekhruzTursunboev",
   "license": "MIT",
@@ -24,23 +24,40 @@
     {
       "name": "forge-mobile",
       "displayName": "Forge Mobile — React Native & Expo",
-      "description": "Native-grade mobile design skill. Thumb zone architecture, gesture physics with Reanimated 3, haptic feedback taxonomy, platform-specific motion (iOS vs Android), and performance mandates.",
+      "description": "Native-grade mobile design. Thumb zone architecture, gesture physics with Reanimated 3, haptic feedback, platform-specific motion (iOS vs Android), and performance mandates.",
       "file": "skills/forge-mobile/SKILL.md",
       "tags": ["mobile", "react-native", "expo", "ios", "android", "gestures"]
     },
     {
       "name": "forge-motion",
       "displayName": "Forge Motion — Cinematic Animation",
-      "description": "Advanced motion and animation. 5 named spring configs, Framer Motion patterns, GSAP scrolltelling with cleanup, Three.js WebGL setup, and prefers-reduced-motion compliance.",
+      "description": "Advanced motion and animation. 5 named spring configs, Framer Motion patterns, GSAP scrolltelling with cleanup, Three.js WebGL, and prefers-reduced-motion compliance.",
       "file": "skills/forge-motion/SKILL.md",
       "tags": ["motion", "animation", "gsap", "framer", "threejs", "scroll"]
     }
   ],
-  "agents": ["cursor", "claude-code", "windsurf", "copilot", "aider", "chatgpt", "codex"],
+  "agents": [
+    "amp",
+    "antigravity",
+    "cline",
+    "codex",
+    "cursor",
+    "deep-agents",
+    "firebender",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code",
+    "opencode",
+    "warp",
+    "claude-code",
+    "windsurf",
+    "aider"
+  ],
   "keywords": [
     "skill-md", "cursor-rules", "claude-code", "windsurf", "copilot",
+    "antigravity", "codex", "aider", "amp", "cline", "gemini-cli", "warp",
     "frontend-design", "design-system", "ui-ux", "framer-motion",
     "tailwindcss", "react", "nextjs", "agentic-coding", "design-engineer",
-    "non-generic-ui", "anti-slop"
+    "non-generic-ui", "anti-slop", "react-native", "gsap", "threejs"
   ]
 }
