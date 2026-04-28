@@ -32,9 +32,17 @@ Every AI-generated UI has the same fingerprints:
 
 ## Install
 
-Open a terminal **inside your project folder** and run one command.
+### All platforms — recommended
 
-### macOS / Linux
+```bash
+npx skills add https://github.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents
+```
+
+This installs the interactive skill picker. Select which skill to add and it drops the `SKILL.md` into your project root automatically.
+
+---
+
+### Manual — macOS / Linux
 
 ```bash
 # Core skill — start here for any web project

@@ -1,11 +1,20 @@
 # Bexa — Integration Guide
 
 Get up and running in under 2 minutes with any AI coding agent.
-Open your terminal, `cd` into your project folder, and run the command for your OS.
 
 ---
 
-## Quick Install
+## Recommended Install (All Platforms)
+
+```bash
+npx skills add https://github.com/BekhruzTursunboev/Bexa-professional-frontend-design-skills-for-ai-agents
+```
+
+Run this in your project folder. It opens an interactive picker — select the skill you want and it drops `SKILL.md` directly into your project root. Works on **Windows, macOS, and Linux** with Node.js installed.
+
+---
+
+## Manual Install
 
 ### macOS / Linux (Terminal)
 
